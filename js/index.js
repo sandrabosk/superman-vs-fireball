@@ -26,8 +26,8 @@ const fireballImg = new Image();
 const supermanImg = new Image();
 
 // "src" has to point as the image is used in HTML file
-fireballImg.src = "./images/fireball.png";
-supermanImg.src = "./images/superman.png";
+fireballImg.src = "images/fireball.png";
+supermanImg.src = "images/superman.png";
 
 let fireballX = 800;
 let fireballY = 200;
@@ -139,14 +139,14 @@ function gameOver(){
     // create tired_superman image
     const tiredSupermanImg = new Image();
     // point to the src where is the image itself
-    tiredSupermanImg.src = "./images/tired_superman.png";
+    tiredSupermanImg.src = "images/tired_superman.png";
     tiredSupermanImg.onload = function(){
         ctx.drawImage(tiredSupermanImg, 480, 300, 150, 150);
     }
     // change the value of isOver to true
     isOver = true;
     // display Game Over
-    ctx.font = "bold 70px monospace";
+    ctx.font = "bold 70px Arial";
     ctx.fillStyle = "red";
     ctx.fillText("Game Over", 400, 225);
 }
